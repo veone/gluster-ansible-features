@@ -11,6 +11,7 @@
                                and 'success' not in result.msg)"
 
 - name: Generate ssh key in one of the nodes in HA cluster
+  become_user: root
   shell: >
      echo -e  'y\n' | ssh-keygen -q -t rsa -N '' -f \
           /var/lib/glusterd/nfs/secret.pem
