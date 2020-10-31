@@ -1,7 +1,7 @@
 ---
 # defaults file for nfs_ganesha
 ganesha_packages:
-   - glusterfs-ganesha
+   - nfs-ganesha-gluster
    - nfs-ganesha
    - corosync
    - pacemaker
